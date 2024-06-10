@@ -16,14 +16,14 @@ body {
 .header {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px; /* Adjusted margin for better spacing */
+    margin-bottom: 10px; /* spacing */
     text-align: center; /* Center the text */
 }
 
 .subheader {
     font-size: 14px;
     color: #666;
-    margin-top: -10px; /* Adjusted margin to overlap with header */
+    margin-top: -10px;
 }
 
 .container {
