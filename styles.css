@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://th.bing.com/th/id/R.0b962f384fc333837891c4745c3b798e?rik=IcV9%2bh043we0jA&amp;riu=http%3a%2f%2fphandroid.s3.amazonaws.com%2fwp-content%2fuploads%2f2014%2f02%2fFlappy-Birds-gif.gif&amp;ehk=m84vzR%2bYUJK9ML9AZxYKggNeSg5waGRPhRbUjiRvu7M%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+    text-align: center; /* Center the text */
+}
+
+.subheader {
+    font-size: 14px;
+    color: #666;
+    margin-top: -10px; /* Adjusted margin to overlap with header */
+}
+
+.container {
+    position: relative;
+}
+
+canvas {
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.controls input[type="range"] {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.controls input[type="range"]:hover {
+    background: #ccc;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
