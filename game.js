@@ -14,7 +14,6 @@ let jump = false;
 const birdImg = new Image();
 birdImg.src = 'https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png';
 
-// Event listener for bird jump
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
         jump = true;
@@ -52,13 +51,9 @@ class Pipe {
 
 // Game loop
 function gameLoop() {
-    // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Draw bird
     ctx.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
-    // Bird physics
     bird.velocity += bird.gravity;
     bird.y += bird.velocity;
 
@@ -90,7 +85,7 @@ function gameLoop() {
         jump = false;
     }
 
-    // Update frames
+    // Update frames bug idk
     frames++;
 
     // Display score
@@ -101,7 +96,6 @@ function gameLoop() {
     requestAnimationFrame(gameLoop);
 }
 
-// Reset game
 function resetGame() {
     bird.y = 150;
     bird.velocity = 0;
@@ -122,7 +116,7 @@ pipeSpeedSlider.addEventListener('input', () => {
     pipeSpeed = parseInt(pipeSpeedSlider.value);
 });
 
-// Start game
+// start????
 let frames = 0;
 resetGame();
 gameLoop();
